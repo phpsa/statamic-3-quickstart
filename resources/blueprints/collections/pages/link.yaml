@@ -1,0 +1,31 @@
+order: 2
+title: Link
+sections:
+  main:
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: redirect
+        field:
+          type: link
+          required: true
+  sidebar:
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false

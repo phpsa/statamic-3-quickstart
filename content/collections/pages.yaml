@@ -1,0 +1,18 @@
+title: Pages
+template: page
+layout: layouts/app
+revisions: false
+route: '{{slug}}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+structure:
+  root: true
+  tree:
+    -
+      entry: 9e283810-19d8-48d7-948c-c1d91f238ec4
+    -
+      entry: 1ee55c1a-af3e-4671-ab00-f518f80be9ee
+    -
+      entry: 0c8d3b76-6d87-4b6b-b555-51afe29c9b20
