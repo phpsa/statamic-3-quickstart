@@ -19,3 +19,42 @@
 -   seomatic https://statamic.com/addons/cnj/seotamic
 -   [Docksal](https://docksal.io/) (optional)
     -   docksal artisan addon (`fin addon install artisan -g`) for a global install
+
+## Installation Options:
+
+### Use as tempalate:
+
+-- using the use this template button to clone into your own repo, checkout and follow installation instructions below
+
+### Checkout
+
+```bash
+git clone https://github.com/phpsa/statamic-3-quickstart.git yoursite
+cd yoursite
+rm -rf .git
+cp .env.example .env
+```
+
+setup your env variables (database etc)
+
+if using docksal you can then run
+
+```bash
+fin init
+fin exec php artisan key:generate
+fin exec php artisan migrate
+fin exec php please make:user
+yarn
+```
+
+Else
+
+```bash
+composer install
+php artisan key:generate
+php artisan migrate
+php please make:user
+yarn
+```
+
+You should be good to go now
