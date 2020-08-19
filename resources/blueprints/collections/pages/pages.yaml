@@ -31,6 +31,14 @@ sections:
             - pages
           max_items: 1
           listable: false
+      -
+        handle: withform
+        field:
+          max_items: 1
+          type: form
+          localizable: false
+          listable: hidden
+          display: Form
   seo:
     display: SEO
     fields:

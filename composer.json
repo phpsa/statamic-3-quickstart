@@ -17,7 +17,7 @@
         "laravel/framework": "^7.24",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.1",
-        "statamic/cms": "^3.0@beta",
+        "statamic/cms": "^3.0.0",
         "statamic/ssg": "dev-master"
     },
     "require-dev": {

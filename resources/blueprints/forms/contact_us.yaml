@@ -1,0 +1,42 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Your Name'
+          validate: required
+      -
+        handle: email
+        field:
+          input_type: text
+          type: text
+          instructions: 'We will not sell nor send you spam'
+          localizable: false
+          listable: hidden
+          display: 'Your Email'
+          validate: required|email
+      -
+        handle: message
+        field:
+          type: textarea
+          localizable: false
+          listable: hidden
+          display: 'Your Message'
+          validate: required
+      -
+        handle: subscribe_to_newsletter
+        field:
+          options:
+            - 'Yes'
+            - 'No'
+          inline: true
+          type: radio
+          localizable: false
+          listable: hidden
+          display: 'Subscribe to Newsletter'
