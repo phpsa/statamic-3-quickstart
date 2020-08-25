@@ -1,0 +1,38 @@
+<footer class="bg-white">
+    <div
+        class="max-w-screen-xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8"
+    >
+        {{ if nav:footer}}
+        <nav class="-mx-5 -my-2 flex flex-wrap justify-center">
+            {{ nav:footer}}
+            <div class="px-5 py-2">
+                <a
+                    href="{{ url }}"
+                    class="text-base leading-6 text-gray-500 hover:text-gray-900"
+                >
+                    {{ title }}
+                </a>
+            </div>
+            {{ /nav:footer}}
+        </nav>
+        {{ /if }}
+        <div class="mt-8 flex justify-center">
+            {{ settings:socials }}
+            <a
+                href="{{ url }}"
+                class="ml-4"
+                aria-label="{{ name }}"
+                rel="noopener"
+            >
+                {{ svg :src="icon" class="h-6 w-6 hover:text-teal" }}
+            </a>
+            {{/settings:socials}}
+        </div>
+        <div class="mt-8">
+            <p class="text-center text-base leading-6 text-gray-400">
+                &copy; {{ now | format:Y}} {{ settings:site_name }}. All rights
+                reserved.
+            </p>
+        </div>
+    </div>
+</footer>

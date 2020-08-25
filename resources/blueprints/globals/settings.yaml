@@ -1,0 +1,64 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: site_name
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Site Name'
+          validate:
+            - required
+      -
+        handle: site_logo
+        field:
+          mode: grid
+          container: images
+          restrict: true
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          localizable: false
+          listable: hidden
+          display: 'Site Logo'
+      -
+        handle: socials
+        field:
+          fields:
+            -
+              handle: name
+              field:
+                input_type: text
+                type: text
+                localizable: false
+                listable: hidden
+                display: Name
+            -
+              handle: url
+              field:
+                input_type: url
+                type: text
+                localizable: false
+                listable: hidden
+                display: Url
+            -
+              handle: icon
+              field:
+                mode: grid
+                container: images
+                restrict: false
+                allow_uploads: true
+                max_files: 1
+                type: assets
+                localizable: false
+                listable: hidden
+                display: Icon
+          mode: table
+          reorderable: true
+          type: grid
+          localizable: false
+          listable: hidden
+          display: Socials

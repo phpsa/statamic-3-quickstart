@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ site_short_locale }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {{if seotamic }} {{seomatic}} {{else}}
+        <title>{{ title }} — {{ settings:site_name }}</title>
+        <meta name="description" content="{{ excerpt ?? title }}" />
+        {{/if}}
+
+        <link rel="home" href="{{ site:url }}" />
+        <link rel="icon" href="/favicon.ico" />
+
+        {{ partial:layouts.partials.css}} {{ yield:scripts }}
+    </head>
+
+    <body
+        class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans"
+    >
+        {{ partial:layouts.partials.header}}
+
+        <main
+            role="main"
+            class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6"
+        >
+            {{ partial:layouts.partials.content }}
+        </main>
+
+        {{ partial:layouts.partials.footer}} {{ partial:layouts.partials.js}} {{
+        yield:scripts }}
+    </body>
+</html>

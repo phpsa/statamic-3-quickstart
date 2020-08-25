@@ -1,6 +1,6 @@
 <h1>{{title}}</h1>
-{{ content }}
 
+{{content}}
 
 {{if withform }}
 

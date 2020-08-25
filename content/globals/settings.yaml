@@ -1,0 +1,13 @@
+title: Settings
+data:
+  site_name: 'Starter Site'
+  site_logo: d48c9f05-5800-425c-b1de-94a58d78e5fb_200x200.png
+  socials:
+    -
+      name: Facebook
+      url: 'https://facebook'
+      icon: facebook.svg
+    -
+      name: Twitter
+      url: 'https://www.twitter.com'
+      icon: twitter.svg
